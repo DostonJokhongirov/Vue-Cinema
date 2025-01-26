@@ -1,0 +1,65 @@
+@import url(./fonts.css);
+:root {
+    --c700: 'Comfortaa-Bold';
+    --c400: 'Comfortaa-Regular';
+    --m700: 'Montserrat-Bold';
+    --m400: 'Montserrat-Regular';
+    --r500: 'Roboto-Medium';
+    --r400: 'Roboto-Regular';
+    --dark: #040D1F;
+    --gold: #F18128;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    background-color: var(--dark);
+}
+.header_top {
+    background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    align-items: center;
+    gap: 24px;
+    animation: bg 3s linear infinite;
+}
+@keyframes bg {
+    0%{
+        filter: hue-rotate(0);
+    }100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.header_top_text {
+    font-family: var(--c400);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.84px;
+    color: #fff;
+    width: 166px;
+}
+.header_top_img {
+    animation: icon 2s linear infinite;
+}
+@keyframes icon {
+    from{
+        transform: rotateY(0);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
