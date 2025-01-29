@@ -65,6 +65,13 @@ body {
 }
 .nav{
     background: #010305CC;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    /* backdrop-filter: blur(10px); */
+    
 }
 .nav_box {
     display: flex;
@@ -153,7 +160,7 @@ body {
     width: 100%;
     text-align: justify;
 }
-.btns {
+.intro_btns {
     display: flex;
     gap: 30px;
 }
@@ -268,4 +275,15 @@ body {
 }
 .film_card:hover {
     box-shadow: 0 0 10px #fff;
+}
+.menu,.close {
+    display: none;
+
+}
+.menu img,
+.close img {
+    width: 25px;
+}
+#chek {
+    display: none;
 }
