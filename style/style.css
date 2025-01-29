@@ -70,8 +70,6 @@ body {
     left: 0;
     width: 100%;
     z-index: 99;
-    backdrop-filter: blur(10px);
-    
 }
 .nav_box {
     display: flex;
